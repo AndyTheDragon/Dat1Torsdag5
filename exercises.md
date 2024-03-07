@@ -6,7 +6,7 @@ Each task must be created as a new package (folder) in the project's src directo
 Please note, that it is quite unusual to have a Main class in each package, yet this is done so for the sake of the exercise.
 
 ---
-## Task1: ArrayList og objekter
+## Task1: ArrayList and objects
 1.a Create a class, Customer, with private attributes (fields/ instance variables): 
 <code>
 
