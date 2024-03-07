@@ -9,11 +9,12 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 ## Task1: ArrayList og objekter
 1.a Create a class, Customer, with private attributes (fields/ instance variables): 
 <code>
-String firstName
-String lastName
-String username
-int id
-static int counter
+
+	String firstName
+	String lastName
+	String username
+	int id
+	static int counter
 </code>
 
 1.b Create a constructor taking the name and username as parameters.
@@ -26,13 +27,16 @@ static int counter
 (You may instantiate the customers first, and then add them to the list. Or you may add and instantiate on the same line.)
 <details> <code>
   
-Customer c1 = new Customer("fornavn", "efternavn", "brugernavn");
-customerList.add(c1);
+	Customer c1 = new Customer("fornavn", "efternavn", "brugernavn");
+	customerList.add(c1);
 </code>
 
 OR
 
-<code>customerList.add(new Customer("fornavn", "efternavn", "brugernavn"));</code>
+<code>
+	
+	customerList.add(new Customer("fornavn", "efternavn", "brugernavn"));
+</code>
 </details>
 
 1.f Create a static method in the Main class called <code>printCustomers(ArrayList customers)</code>, in which you print out all the customers by looping through the customers with a 'for each' loop. Test this method from you main() method by passing the <code>customerList</code> as an argument. Note that the datatype is missing from the ArrayList declaration.
@@ -60,11 +64,12 @@ The solution to this step is given below, but give it a go before peeping.
   <summary> Peep the solution to this step:
   </summary>
   <code>
-  try {
-       Scanner scan = new Scanner(file); 
-     }catch(FileNotFoundException e){
-        System.out.println("File not found. Check path and filename");  
-      }
+		  
+	try {
+		Scanner scan = new Scanner(file); 
+	}catch(FileNotFoundException e){
+ 		System.out.println("File not found. Check path and filename");  
+	}
 </code>
 Remember to import <code>java.util.Scanner</code> and <code>java.io.FileNotFoundException</code>
 </details>
@@ -79,12 +84,9 @@ Use a while loop with the <code>hasNextLine()</code> and <code>nextLine()</code>
   </summary>
 <code>
 
-  while(scan.hasNextLine()){
-
-        coffeeMenu.add(scan.nextLine());
-
-  }
-
+	  while(scan.hasNextLine()){
+		coffeeMenu.add(scan.nextLine());
+	}
 </code>      
 </details>
 
