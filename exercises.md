@@ -25,7 +25,8 @@ Please note, that it is quite unusual to have a Main class in each package, yet 
 
 1.e Create a Main class with a <code>main()</code> method. Declare and instantiate an <code>ArrayList</code> called <code>customerList</code>. Add three or more customers to the <code>customerList</code>.
 (You may instantiate the customers first, and then add them to the list. Or you may add and instantiate on the same line.)
-<details> <code>
+<details><summary> Hint:
+  </summary> <code>
   
 	Customer c1 = new Customer("fornavn", "efternavn", "brugernavn");
 	customerList.add(c1);
