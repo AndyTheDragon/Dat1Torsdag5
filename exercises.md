@@ -138,22 +138,22 @@ The diagram below shows the attributes and method signatures refered to in steps
 
 3.i Create a static method in Main, <code>countLampsInBuilding</code>, that takes an object of type Building, and returns the total number of lamps in the entire building.
 <details>
-	<summary>
-	   Hint 1
-	</summary>
-	 Consider the return type of the method.
-	 
-	 You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
+<summary>
+   Hint 1
+</summary>
+ Consider the return type of the method.
+
+You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
 </details>
 <details>
-	<summary>
-	   Hint 2
-	</summary>
-	You will need an <code>int counter</code> variable, initialized outside the loop. 
-	
-	You can get the roomslist by using the method <code>getRooms()</code> on the building parameter.
-	 
-	You can get the numberOfLamps from the room by using the <code>getNumberOfLamps()</code> method on the room variable inside the loop.
+<summary>
+   Hint 2
+</summary>
+You will need an <code>int counter</code> variable, initialized outside the loop. 
+
+You can get the roomslist by using the method <code>getRooms()</code> on the building parameter.
+ 
+You can get the numberOfLamps from the room by using the <code>getNumberOfLamps()</code> method on the room variable inside the loop.
 </details>
 
 3.j Create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is less than its number of Rooms. If not it should print "This is an odd building" and return false.
