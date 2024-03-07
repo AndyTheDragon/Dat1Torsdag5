@@ -18,16 +18,20 @@ static int counter
 
 1.b Create a constructor taking the name and username as parameters.
 
-1.c Increase the <code>counter</code> by one for each call the the constructor, and use the <code>counter</code> to initialize the <code>id</code>.
+1.c Increase the <code>counter</code> by one for each call to the constructor, and use the <code>counter</code> to initialize the <code>id</code>.
 
 1.d Create <code>getter()</code> methods and a <code>toString()</code> override.
 
 1.e Create a Main class with a <code>main()</code> method. Declare and instantiate an <code>ArrayList</code> called <code>customerList</code>. Add three or more customers to the <code>customerList</code>.
-(You may instantiate the customers first, and then add them to the list. Or you may add and instantiate om the same line.)
+(You may instantiate the customers first, and then add them to the list. Or you may add and instantiate on the same line.)
 <details> <code>
+  
 Customer c1 = new Customer("fornavn", "efternavn", "brugernavn");
-customerList.add(c1);</code>
+customerList.add(c1);
+</code>
+
 OR
+
 <code>customerList.add(new Customer("fornavn", "efternavn", "brugernavn"));</code>
 </details>
 
