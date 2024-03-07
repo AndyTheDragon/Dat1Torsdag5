@@ -105,7 +105,7 @@ This task is an excercise in accessing fields in objects within objects. You wil
 The diagram below shows the attributes and method signatures refered to in steps 3.a to 3.f.
 ![class diagram](https://github.com/Dat1Cphbusiness/Torsdagsopgaver-5---Files-and-Composition/blob/main/doc/classdiagram.png)
 
-3.a Create a Room.java class with the following fields (use appropriate types and make them private): 
+3.a Create a Room class with the following fields (use appropriate types and make them private): 
 - numberOfDoors
 - numberOfLamps
 - numberOfWindows
@@ -114,16 +114,14 @@ The diagram below shows the attributes and method signatures refered to in steps
 
 3.c As the fields of the Room class are private, create getter()-methods for them, 
 
-3.d Create a Building.java class with the following fields (use appropriate types):
+3.d Create a Building class with the following fields (use appropriate types):
 - rooms 
    <details>
         <summary>
           Hint  
         </summary>
-        This should be a datatype that can hold multiple objects of type Room.
+        This should be a datatype that can hold multiple objects of type Room, fx. an ArrayList.
     </details>
-
-   
 - numberOfBathrooms
 - numberOfFloors
 - isOfficeBuilding
@@ -132,21 +130,30 @@ The diagram below shows the attributes and method signatures refered to in steps
 
 3.f As the fields of the Building class are private, create getters() for them.
     
-3.g In your main method, instantiate at least three different rooms. 
+3.g In your main method, declare and instantiate an ArrayList and add at least three different rooms to the ArrayList. 
 
-3.h Add the three rooms to a collection (preferably of the same data type used for the "rooms" field in your Building.java class).
+3.h In your main method, instantiate a new building, you may use the previously instantiated ArrayList as one of the arguments.
 
-3.i In your main method, instantiate a new building.
+3.i Create a static method in Main, <code>countLampsInBuilding</code>, that takes an object of type Building, and returns the total number of lamps in the entire building.
+<details>
+	<summary>
+	   Hint 1
+	</summary>
+	 Consider the return type of the method.
+	 
+	 You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
+</details>
+<details>
+	<summary>
+	   Hint 2
+	</summary>
+	You will need an <code>int counter</code> variable, initialized outside the loop. 
+	
+	You can get the roomslist by using the method <code>getRooms()</code> on the building parameter.
+	 
+	You can get the numberOfLamps from the room by using the <code>getNumberOfLamps()</code> method on the room variable inside the loop.
+</details>
 
-3.j create a static method in Main, countLampsInBuilding, that takes an object of type Building, and returns the total number of lamps in the entire building.
- <details>
-        <summary>
-           Hint
-        </summary>
-         You will need to have a loop in the body of the method that looks at each room in the building to add the number of laps in each room.
-    </details>
-
-3.k create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is greater than its number of Rooms. If not it should print "This is an odd building" and return false.
+3.j Create another static method in Main, isNormal, that takes an object of type Building. The method should return true if the Building's numberOfFloors is less than its number of Rooms. If not it should print "This is an odd building" and return false.
 
 ---
-
